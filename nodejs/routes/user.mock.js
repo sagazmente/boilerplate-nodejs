@@ -4,7 +4,7 @@ const express = require('express')
 let router = express.Router()
 
 router.route('/user')
-  .get(JWTAuth, (req, res, next) => {
+  .get((req, res, next) => {
     res.json({
       results: [
         {
@@ -17,7 +17,7 @@ router.route('/user')
   })
 
 router.route('/user/:id')
-  .get(JWTAuth, (req, res, next) => {
+  .get((req, res, next) => {
     res.json({
       name: 'Jhon Cena',
       username: 'jcena',
