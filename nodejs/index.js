@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
   })
 });
 
-// app.use('/api', require('./routes/user.mock.js'))
+app.use('/api', require(__dirname + '/routes/user.mock.js'))
 
 app.listen(80, function () {
   console.log('Listening on port 80');
