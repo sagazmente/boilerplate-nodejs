@@ -1,7 +1,0 @@
-{
-  "id": "php",
-  "type": "wedeploy/php",
-  "hooks": {
-    "build": "composer install --no-scripts && composer run-script post-create-project-cmd && composer run-script post-install-cmd"
-  }
-}
